@@ -1,0 +1,15 @@
+Step 1: Check out step-1, run update-database on AnimalKingdom.Core
+	This will create a SQLEXPRESS database called AnimalKingdom that has 2 tables, Animal and AnimalType
+	
+Step 2: Check out step-2, run update-database on AnimalKingdom.Module.Feline
+	This will add a table called Cats to the database, and seed that database with an AnimalType named "Cats"
+	
+Step 3: Check out step-3, run update-database on AnimalKingdom.Core
+	This updates the core table Animal to include a new field: NumberOfLegs. This automigration tried to delete the Cats table that the child context added, so the migration had to be modified to not remove that table.
+	
+Step 4: Check out step-4, run update-database on AnimalKingdom.Module.Feline
+	This revision does not change the domain at all, it only adds an item to the Seed method. The seed method is not run however, since the child context thinks that a migration needs be added to catch up to the model change that was made in the core.
+	
+Step 5: Check out step-5, run update-database on AnimalKingdom.Module.Feline
+	The only way to get the seed method to work is to delete the database, run the AnimalKingdom.Core migration, rescaffold the AnimalKingdom.Module.Feline migration with add-migration 201301091454064_FelineSetup, and then update-database.
+	This branch already rescaffolds the migration, but you'll have to delete your database to see it work still
