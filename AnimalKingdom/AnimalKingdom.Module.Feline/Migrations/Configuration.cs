@@ -1,20 +1,17 @@
+using System.Data.Entity.Migrations;
 using AnimalKingdom.Domain;
+using AnimalKingdom.Module.Feline.Data;
 
 namespace AnimalKingdom.Module.Feline.Migrations
 {
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
-
-    internal sealed class Configuration : DbMigrationsConfiguration<AnimalKingdom.Module.Feline.Data.FelineContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<FelineContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(AnimalKingdom.Module.Feline.Data.FelineContext context)
+        protected override void Seed(FelineContext context)
         {
             //  This method will be called after migrating to the latest version.
 
@@ -33,6 +30,10 @@ namespace AnimalKingdom.Module.Feline.Migrations
                                             new AnimalType
                                                 {
                                                     Name = "Cat"
+                                                },
+                                            new AnimalType
+                                                {
+                                                    Name = "Tiger"
                                                 });
         }
     }
