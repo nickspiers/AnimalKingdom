@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalKingdom.Core", "AnimalKingdom.Core\AnimalKingdom.Core.csproj", "{39721766-9F50-4052-ABB1-AFE22D061673}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalKingdom.Domain", "AnimalKingdom.Domain\AnimalKingdom.Domain.csproj", "{E4B2F800-8006-4331-9DB1-59D950D33A4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalKingdom.Console", "AnimalKingdom.Console\AnimalKingdom.Console.csproj", "{AD85A849-3711-4598-83F8-DD96D4FB6097}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39721766-9F50-4052-ABB1-AFE22D061673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39721766-9F50-4052-ABB1-AFE22D061673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39721766-9F50-4052-ABB1-AFE22D061673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39721766-9F50-4052-ABB1-AFE22D061673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4B2F800-8006-4331-9DB1-59D950D33A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4B2F800-8006-4331-9DB1-59D950D33A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4B2F800-8006-4331-9DB1-59D950D33A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4B2F800-8006-4331-9DB1-59D950D33A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD85A849-3711-4598-83F8-DD96D4FB6097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD85A849-3711-4598-83F8-DD96D4FB6097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD85A849-3711-4598-83F8-DD96D4FB6097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD85A849-3711-4598-83F8-DD96D4FB6097}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
